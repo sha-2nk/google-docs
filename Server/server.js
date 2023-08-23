@@ -10,7 +10,7 @@ mongoose
 
 const io = require("socket.io")(3001, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: ["https://google-docs-wine.vercel.app"],
     methods: ["GET", "POST"],
      allowedHeaders: ["*"], // You can adjust allowed headers as needed
      credentials: true, // You might need this if you're dealing with cookies or authentication
